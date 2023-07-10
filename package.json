@@ -1,0 +1,30 @@
+{
+  "name": "roomba_home_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "start": "ROBOT_CIPHERS=TLS_AES_256_GCM_SHA384 node -r dotenv/config dist/main.js",
+    "dev": "pnpm run build && pnpm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dorita980": "^3.1.11",
+    "dotenv": "^16.3.1",
+    "local-devices": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  }
+}
