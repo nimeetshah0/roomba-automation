@@ -9,7 +9,7 @@ const roobyLocal = new dorita980.Local(
 );
 
 const discoverDevices = async () => {
-  const devices = await find();
+  const devices = await find({ skipNameResolution: true });
   return devices;
 };
 
