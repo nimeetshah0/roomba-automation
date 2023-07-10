@@ -52,10 +52,10 @@ const init = async () => {
   // No one at home. Start cleaning.
   console.log('No one at home. Start cleaning.');
   const state = await roobyLocal.start();
-  console.log(state);
 
   // Write to file that Rooby is cleaning session has started.
   fs.writeFileSync('clean-session-started.txt', 'true');
+  console.log('Clean session has started.');
 };
 
 roobyLocal.on('connect', () => {
